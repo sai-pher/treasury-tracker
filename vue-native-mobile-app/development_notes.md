@@ -1,7 +1,7 @@
-#Developer notes
+# Developer notes
 A brief document for keeping track of useful development tools and requirements.
 
-##Useful references
+## Useful references
 A list of blog posts/websites that might be useful to refer to during development.
 
 - [RESTful api's in nativeScript vue.js](https://vuejsdevelopers.com/2018/07/02/vue-js-native-script-vue-http-web-service/)   
@@ -9,7 +9,7 @@ A list of blog posts/websites that might be useful to refer to during developmen
 - [NativeScript Vue playground](https://play.nativescript.org/)
 - [Vue.js cookbook](https://vuejs.org/v2/cookbook/index.html)
 
-##ToDo's
+## ToDo's
 A check list of tasks to be completed.
 
 - [ ] Create app [Figma](https://www.figma.com/file/xt83Ux0xn0bMgeAMafoPW4/fund-tracker?node-id=1%3A2) prototype 
@@ -20,7 +20,7 @@ A check list of tasks to be completed.
 - [ ] Find resources on date integration.
 - [ ] Decide details to hold on each investor.
 - [ ] Decide what stats would be useful to display on home page.
-##Current issues
+## Current issues
 A check list of issues that require tackling during development. Issues should be 
 described as clearly and concisely as possible and should ideally make reference to the 
 project requirement it is related to.
@@ -29,7 +29,7 @@ project requirement it is related to.
 - [ ]
 - [ ]
 
-##Function brainstorms
+## Function brainstorms
 A list of functions and their brief descriptions to help keep track of 
 thought process.
 
@@ -37,11 +37,11 @@ thought process.
 - 
 - 
 
-##Uniques!
+## Uniques!
 This section is for the unique things a developer might want to keep track of 
 for their particular project scope.
 
-###component brainstorms
+### Component brainstorms
 A list of components and their brief descriptions to help keep track of 
 thought process.
 ---
