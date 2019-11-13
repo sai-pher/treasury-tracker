@@ -3,6 +3,7 @@ import App from "./components/App";
 import Home from "./components/Home";
 import DrawerContent from "./components/DrawerContent";
 import RadSideDrawer from "nativescript-ui-sidedrawer/vue";
+import dataStore from "./Stores/dataStore"
 
 Vue.use(RadSideDrawer);
 
@@ -17,5 +18,6 @@ new Vue({
                 h(Home, {slot: 'mainContent'})
             ]
         )
-    }
+    },
+    store: dataStore
 }).$start();

@@ -8,6 +8,8 @@ A list of blog posts/websites that might be useful to refer to during developmen
 - [NativeScript Vue docs](https://nativescript-vue.org/en/docs/introduction/)
 - [NativeScript Vue playground](https://play.nativescript.org/)
 - [Vue.js cookbook](https://vuejs.org/v2/cookbook/index.html)
+- [Local storage](https://www.nativescript.org/blog/key-value-local-storage-in-a-vue.js-nativescript-app-with-vuex)
+- [vuex](https://vuex.vuejs.org/)
 
 ## ToDo's
 A check list of tasks to be completed.
@@ -45,22 +47,39 @@ for their particular project scope.
 A list of components and their brief descriptions to help keep track of 
 thought process.
 ---
-> **Investor description page:**
+> **Add new investor (P-1)**
 >
-> A page to hold/show data on all the investors currently in the system.
-> 
+>  Page to allow user to add new investor to the database.
+>  extend CRUD functionality??
+>
 > **Requirements**
-> 
-> - Page should hold a list of all the investors
-> - Page should allow user to see details on each investor   
-> - Page should use a component to hold/show details on each investor
 >
-> **UI style**
-> 
-> - [ ] Card UI? 
-> - [ ] Split-view list & details page UI? 
+> - Page should allow user to add details about new investor
+>
+>**UI Style**
+>
+> - [ ] From (stand alone).
+> - [ ] Form (found in settings page)
+> - [ ] Form (found in investor description page)
 ---
-> **Dashboard/ home page**
+> **Monthly payment check list (P-1)**
+>
+> A page to manage whether or not an investor has paid their due for a given month. 
+>
+> **Requirements**
+>
+> - Page should display each investor and their paid status for the month.
+> - Page should allow user to indicate that an investor has paid for the given month.
+> - Page should reset the paid status of each investor after every month.
+> - Page should be able to notify the user (and investors) 7 days before the end of the month of the users who have not paid.
+> - Page should have a filter option (all | paid | not paid).
+>
+>**UI Style**
+>
+> - [X] Single list with investor -> form [ammount | add] component for each one
+> - [ ] N/A
+---
+> **Dashboard/ home page (P-2)**
 >
 > The home page of the app. This would show basic stats on the spreadsheet for the user.
 >
@@ -72,20 +91,53 @@ thought process.
 >
 >**UI Style**
 >
-> - [ ]
-> - [ ]
+> - [ ] Grid layout with useful data point and modal to each point
+> - [ ] ...
 ---
-> **Monthly payment check list**
+> **Investor description page (P-3)**
 >
-> A page to manage whether or not an investor has paid their due for a given month. 
+> A page to hold/show data on all the investors currently in the system.
+> 
+> **Requirements**
+> 
+> - Page should hold a list of all the investors
+> - Page should allow user to see details on each investor   
+> - Page should use a component to hold/show details on each investor
+> - Page should show transaction history and stats on each contributor.
+> - Page should allow user to trigger "payment due" notification for each contributor.
+> - *BONUS* -> "payment due" notification can be sent with stats breakdown. 
+>
+> **UI style**
+> 
+> - [ ] Card UI? 
+> - [ ] Split-view list & details page UI? 
+---
+> **Transaction details page (P-4)**
+>
+>  
 >
 > **Requirements**
 >
-> - Page should display each investor and their paid status for the month.
-> - Page should allow user to indicate that an investor has paid for the given month.
-> - Page should reset the paid status of each investor after every month.
+> - Page should display simple data analysis stats.
+> - Page should give user access to generalised stats on contributor payments.
+> - Page should show monthly stats on global goals.
 >
 >**UI Style**
 >
-> - [ ]
-> - [ ]
+> - [ ] Tab view with different stats and details on each page
+> - [ ] ...
+---
+> **User settings (P-5)**
+>
+>  Page to allow the user to customise in app settings. (to be decided)
+>
+> **Requirements**
+>
+> - Page should allow user to set app preferences.
+> - Page should allow user to customise "payment due" notification message.
+>
+>**UI Style**
+>
+> - [ ] Stack layout with settings options as forms.
+> - [ ] ...
+---

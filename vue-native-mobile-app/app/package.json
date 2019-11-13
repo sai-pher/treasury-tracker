@@ -3,5 +3,9 @@
   "android": {
     "v8Flags": "--expose_gc",
     "markingMode": "none"
+  },
+  "dependencies": {
+    "nativescript-ui-dataform": "^6.0.0",
+    "vuex": "^3.1.1"
   }
 }

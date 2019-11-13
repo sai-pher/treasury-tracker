@@ -20,6 +20,12 @@
                     <Label class="p-r-10" col="1" text="Browse"></Label>
                 </GridLayout>
 
+                <GridLayout :class="'sidedrawer-list-item' + (selectedPage === 'checkList' ? ' selected': '')"
+                            @tap="onNavigationItemTap(checkList)" columns="auto, *">
+                    <Label class="fa" col="0" text.decode="&#xf1ea;"></Label>
+                    <Label class="p-r-10" col="1" text="check List"></Label>
+                </GridLayout>
+
                 <GridLayout :class="'sidedrawer-list-item' + (selectedPage === 'Search' ? ' selected': '')"
                             @tap="onNavigationItemTap(Search)" columns="auto, *">
                     <Label class="fa" col="0" text.decode="&#xf002;"></Label>
@@ -39,6 +45,12 @@
                     <Label class="fa" col="0" text.decode="&#xf013;"></Label>
                     <Label class="p-r-10" col="1" text="Settings"></Label>
                 </GridLayout>
+
+                <GridLayout :class="'sidedrawer-list-item' + (selectedPage === 'Add Contributor' ? ' selected': '')"
+                            @tap="onNavigationItemTap(AddContributor)" columns="auto, *">
+                    <Label class="fa" col="0" text.decode="&#xf013;"></Label>
+                    <Label class="p-r-10" col="1" text="Add Contributor"></Label>
+                </GridLayout>
             </StackLayout>
         </ScrollView>
     </GridLayout>
@@ -50,6 +62,8 @@
     import Featured from "./Featured";
     import Search from "./Search";
     import Settings from "./Settings";
+    import AddContributor from "./AddContributor";
+    import checkList from "./checkList"
     import * as utils from "~/shared/utils";
     import SelectedPageService from "~/shared/selected-page-service";
 
@@ -62,18 +76,22 @@
             return {
                 Home: Home,
                 Browse: Browse,
+                checkList: checkList,
                 Featured: Featured,
                 Search: Search,
                 Settings: Settings,
+                AddContributor: AddContributor,
                 selectedPage: ""
             };
         },
         components: {
             Home,
             Browse,
+            checkList,
             Featured,
             Search,
-            Settings
+            Settings,
+            AddContributor
         },
         methods: {
             onNavigationItemTap(component) {
