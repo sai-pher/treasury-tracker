@@ -14,14 +14,19 @@ A list of blog posts/websites that might be useful to refer to during developmen
 ## ToDo's
 A check list of tasks to be completed.
 
-- [ ] Create app [Figma](https://www.figma.com/file/xt83Ux0xn0bMgeAMafoPW4/fund-tracker?node-id=1%3A2) prototype 
-- [ ] Add required components to TODO list.
+- [ ] Create Homepage component.
+- [ ] Create view contributors component.
+- [ ] Implement CRUD functionality for contributor data.
+- [ ] Link front end to backend service.
+- [ ] Add graph/spreadsheet data view/download option.
+- [x] Add required components to TODO list.
 - [ ] Find resources on chart integration.
-- [ ] Find resources on form integration.
+- [x] Find resources on form integration.
 - [ ] Find resources on notification integration.
 - [ ] Find resources on date integration.
-- [ ] Decide details to hold on each investor.
-- [ ] Decide what stats would be useful to display on home page.
+- [x] Decide details to hold on each investor.
+- [x] Decide what stats would be useful to display on home page.
+
 ## Current issues
 A check list of issues that require tackling during development. Issues should be 
 described as clearly and concisely as possible and should ideally make reference to the 
@@ -35,9 +40,26 @@ project requirement it is related to.
 A list of functions and their brief descriptions to help keep track of 
 thought process.
 
-- 
-- 
-- 
+#### Getters
+- [x] get all contributors
+- [x] get all unpaid contributors
+- [x] get each contributor
+- [x] get contributor contributions
+- [ ] get contributor count
+- [ ] get total contributions
+- [ ] get total paid count
+- [ ] get each contributor paid count
+
+#### Mutations
+- [x] add new contributor
+- [x] add contributor contribution
+- [ ] update contributor details
+
+#### Actions
+- [ ] pull contributor data
+- [ ] push contributor data
+- [ ] update contributor data
+- [ ] get spreadsheet
 
 ## Uniques!
 This section is for the unique things a developer might want to keep track of 
@@ -58,7 +80,7 @@ thought process.
 >
 >**UI Style**
 >
-> - [ ] From (stand alone).
+> - [x] From (stand alone).
 > - [ ] Form (found in settings page)
 > - [ ] Form (found in investor description page)
 ---
@@ -76,7 +98,7 @@ thought process.
 >
 >**UI Style**
 >
-> - [X] Single list with investor -> form [ammount | add] component for each one
+> - [X] Single list with investor -> form [amount | add] component for each one
 > - [ ] N/A
 ---
 > **Dashboard/ home page (P-2)**
@@ -91,7 +113,7 @@ thought process.
 >
 >**UI Style**
 >
-> - [ ] Grid layout with useful data point and modal to each point
+> - [x] Grid layout with useful data point and modal to each point
 > - [ ] ...
 ---
 > **Investor description page (P-3)**
@@ -110,7 +132,7 @@ thought process.
 > **UI style**
 > 
 > - [ ] Card UI? 
-> - [ ] Split-view list & details page UI? 
+> - [x] Split-view list & details page UI? 
 ---
 > **Transaction details page (P-4)**
 >

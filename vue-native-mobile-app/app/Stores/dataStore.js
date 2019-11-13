@@ -47,7 +47,6 @@ const dataStore = new Vuex.Store({
         getNumContributors(state) {
             return state.contributors.length
         },
-
         getTotalContribution(state) {
             let sum = 0;
             state.contributors.forEach((contributor) => {
